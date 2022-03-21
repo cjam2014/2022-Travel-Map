@@ -5,10 +5,13 @@
 # value is `python27` (for Python 2.7)
 runtime: python27
 api_version: 1
-# app.yaml
+threadsafe: true
+
 handlers:
-  static_files: www/index.html
-  upload: www/index.html
+- url: /
+  static_files: www/MAP/index.html
+  upload: www/MAP/index.html
+
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
