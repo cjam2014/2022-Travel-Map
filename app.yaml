@@ -9,9 +9,9 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: www/MAP/index.html
-  upload: www/MAP/index.html
+  static_files: TRAVELMAP/www/MAP/index.html
+  upload: TRAVELMAP/www/MAP/index.html
 
 - url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+  static_files: TRAVELMAP/www/\1
+  upload: TRAVELMAP/www/(.*)
